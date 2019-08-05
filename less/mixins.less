@@ -1,1 +1,69 @@
 // Mixins Here
+
+/* Navigation Menu Styling */
+
+.navigation() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+/* Navigation link a anchor tag styling */
+
+.navigation-link() {
+    padding:2rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: @nav-font;
+}
+
+.navigation-link-hover() {
+    background: @menu-hover-bg-color;
+    color: @menu-hover-font-color;
+    border-radius: 50%;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* Button Styling */ 
+
+.button(@width: .2rem, @height: .2rem) {
+    width: @width;
+    height: @height;
+    border: 2px solid @btn-border-color;
+    background: @btn-bg-color;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    color: @wild-sand;
+}
+
+.button-hover() {
+    background: @btn-hover-bg-color;
+    color: @nav-font;
+    border-radius: 30%;
+
+}
+
+
+
+/* Button Transition */
+
+.transition-button() {
+    background: #ff5722;
+    width: 100%;
+    // height: auto;
+    transition-property: all;
+    transition-duration: 1s, 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.transition-button-hover() {
+    cursor: pointer;
+    background: red;
+    border-radius: 50%;
+    text-transform: uppercase;
+}

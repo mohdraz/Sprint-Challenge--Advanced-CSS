@@ -1,1 +1,54 @@
 // Navigation code here
+
+#header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+    padding: 2rem;
+    background: @nav-bg;
+    display: grid;
+    // align-items: center;
+
+    @media @iphone {
+        margin: 0;
+        padding: 1rem;
+    }
+
+     
+    .title {
+        text-align: center;
+        font-size: 5rem;
+
+        @media @iphone {
+            font-size: 3rem;
+        }
+    }
+
+    .navbar {
+        .navigation();
+
+        @media @iphone {
+            justify-content: space-evenly;
+        }
+
+        .nav-link {
+            .navigation-link();
+
+            @media @iphone {
+                padding: inherit;
+            }
+        }
+
+        .nav-link:hover {
+            .navigation-link-hover();
+        }
+    }
+
+}
+
+.sticky-nav {
+    position: sticky;
+	top: 0px;
+    z-index: 111;
+    opacity: .9;
+}
