@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SpaceWalkers - contact</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+ <!-- navigation code here -->
+ <header id="header" class="sticky-nav">
+   <a href="index.html"><h1 class="title">SpaceWalkers</h1></a>
+   <ul class="navbar">
+     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+     <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+     <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+     <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+     <li class="nav-item"><a href="" class="nav-link">Sign In</a></li>
+   </ul>
+ </header>
+
+  <div class="container contact-page">
+      <img src="img/contact.jpeg" alt="Method to contact us">
+    <h1>Sign Up for Space Walker Magazines</h1>
+        <form id="contact-form" action="results.html" method="GET">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+            <input name="tel" type="tel" class="form-control" placeholder="Your Phone Number" required><br>
+            <select name="package" class="form-control custom-select">
+                <option class="select-items" value="audi" selected>Choose Your Magazine</option>
+                <option value="package-1">Alpha-1</option>
+                <option value="saab">Beta-2</option>
+                <option value="vw">Premium-3</option>
+            </select>
+            <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+
+            <input type="submit" class="form-control submit" value="Send Message">
+        </form>
+    </div>
+  
+    <footer>
+      <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+
+  </div>
+</body>
+</html>
